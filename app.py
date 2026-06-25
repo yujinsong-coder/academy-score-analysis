@@ -172,7 +172,7 @@ if uploaded_files:
                 
                 fig = px.bar(
                     graph_df, x="캠퍼스", y=y_axis, color=f'{selected_col_graph}_구간',
-                    title=f"캠퍼스별 {selected_col_graph} {title_suffix}", barmode="stack",
+                    title=f"캠퍼스별 {selected_col_graph} {title_suffix}", barmode="group",
                     color_discrete_map={'Advanced': '#93c5fd', 'On': '#d1d5db', 'Developing': '#fca5a5'},
                     category_orders={f'{selected_col_graph}_구간': ['Advanced', 'On', 'Developing']},
                     labels=label_dict,
